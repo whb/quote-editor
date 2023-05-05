@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply rounded-lg py-3 px-6 bg-red-600 hover:bg-red-500 text-white font-medium;
+  }
+}
+
+.turbo-progress-bar {
+  @apply bg-gradient-to-r from-red-500 to-blue-500;
+}
+
+
+
