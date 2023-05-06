@@ -5,7 +5,7 @@
     </div>
 
     <div>
-      <%= link_to 'Delete', quote_url(quote), data: { "turbo-method": :delete }, class: "btn" %>
+      <%= link_to 'Delete', quote_path(quote), data: { "turbo-method": :delete }, class: "btn" %>
       <%= link_to 'Edit', edit_quote_path(quote), class: "btn" %>
     </div>
 

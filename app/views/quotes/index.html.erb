@@ -8,9 +8,12 @@
     <%= link_to 'Add quote', new_quote_path, class: "btn-primary", data: { turbo_frame: dom_id(Quote.new) } %>
   </div>
 
+  <%= turbo_stream_from "quotes" %>
+
   <%= turbo_frame_tag Quote.new %>
 
   <%= turbo_frame_tag "quotes" do %>
     <%= render @quotes %>
   <% end %>
+  
 </div>
