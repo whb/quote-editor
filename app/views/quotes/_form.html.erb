@@ -11,12 +11,13 @@
     </div>
   <% end %>
 
-  <div class="my-5">
-    <%= form.label :name %>
-    <%= form.text_field :name, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
-  </div>
+  <div class="item-container">
+    <div class="flex-auto px-2">
+      <%= form.label :name, class: "visually-hidden" %>
+      <%= form.text_field :name, class: "inline-block shadow rounded-md border border-gray-200 outline-none w-full" %>
+    </div>
 
-  <div class="inline">
-    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+    <%= link_to "Cancel", quotes_path, class: "flex-none btn" %>
+    <%= form.submit class: "flex-none btn-primary" %>
   </div>
 <% end %>
